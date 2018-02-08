@@ -86,7 +86,12 @@ console.log(difference);
  * Console.log `product` to test your code.
 */
 
+function multiply(guest1, guest2){
+	return(guest1 * guest2)
 
+}
+var product = multiply(guest1, guest2)
+console.log(product);
 
 /*
  * #5
