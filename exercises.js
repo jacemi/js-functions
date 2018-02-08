@@ -25,7 +25,8 @@ console.log(testGreeting); // printing the output value of the function.
  *   @variable Datatype: Number `bango2`
  *
  * These two variables will be used to invoke the functions #2 - #5.
-*/ 
+*/ var guest1 = 1;
+var guest2 = 3;
 
 
 
@@ -44,8 +45,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
+function add(guest1, guest2){
+	return (guest1 + guest2)
+}
 
 
+var sum = add(guest1, guest2);
+console.log(sum);
 /*
  * #3
  * Function - subtract
@@ -59,7 +65,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
-
+function subtract(guest1, guest2){
+	return(guest1 - guest2)
+}
+var difference = subtract(guest1, guest2)
+console.log(difference);
 
 
 /*
