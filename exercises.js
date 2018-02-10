@@ -344,6 +344,11 @@ console.log(bonanza);
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+function verifyDrinkingAge(age){
+	return age >= 21;
+}
+var canDrink = verifyDrinkingAge(23);
+console.log(canDrink);
 
 
 /**
