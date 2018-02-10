@@ -90,7 +90,7 @@ function multiply(guest1, guest2){
 	return(guest1 * guest2)
 
 }
-var product = multiply(guest1, guest2)
+var product = multiply(guest1, guest2);
 console.log(product);
 
 /*
@@ -107,8 +107,13 @@ console.log(product);
  * Console.log `quotient` to test your code.
 */
 
+function divide(guest1, guest2){
+	return(guest1 / guest2)
+}
 
+var quotient = divide(guest1, guest2);
 
+console.log(quotient);
 /*
  * #6
  * Function - checkSum
@@ -122,6 +127,12 @@ console.log(product);
 */
 
 
+function checkSum(x){
+	return("Mariah Carey has been married" + " " + x + " " + "amount of times")
+}
+var daDiva = checkSum(3);
+
+console.log(daDiva);
 
 /*
  * #7
