@@ -25,8 +25,8 @@ console.log(testGreeting); // printing the output value of the function.
  *   @variable Datatype: Number `bango2`
  *
  * These two variables will be used to invoke the functions #2 - #5.
-*/ var guest1 = 1;
-var guest2 = 3;
+*/ var bango1 = 1;
+var bango2 = 3;
 
 
 
@@ -50,7 +50,7 @@ function add(guest1, guest2){
 }
 
 
-var sum = add(guest1, guest2);
+var sum = add(bango1, bango2);
 console.log(sum);
 /*
  * #3
@@ -68,7 +68,7 @@ console.log(sum);
 function subtract(guest1, guest2){
 	return(guest1 - guest2)
 }
-var difference = subtract(guest1, guest2)
+var difference = subtract(bango1, bango2)
 console.log(difference);
 
 
@@ -90,7 +90,7 @@ function multiply(guest1, guest2){
 	return(guest1 * guest2)
 
 }
-var product = multiply(guest1, guest2);
+var product = multiply(bango1, bango2);
 console.log(product);
 
 /*
@@ -111,7 +111,7 @@ function divide(guest1, guest2){
 	return(guest1 / guest2)
 }
 
-var quotient = divide(guest1, guest2);
+var quotient = divide(bango1, bango2);
 
 console.log(quotient);
 /*
@@ -165,7 +165,12 @@ console.log(difference);
  * Console.log your result.  
 */
 
+function checkProduct(){
+	return(sum * product)
+}
 
+var stuffff = checkProduct();
+console.log(stuffff);
 
 /*
  * #9
@@ -178,6 +183,12 @@ console.log(difference);
  * Console.log your result.  
 */
 
+function checkQuotient(){
+	return(product * quotient);
+}
+var eggo = checkQuotient();
+console.log(eggo);
+
 /*
  * Declare three variables
  *   @variable Datatype: Number `bango3`
@@ -186,6 +197,7 @@ console.log(difference);
  
  * #10
  * Function - addThenSubtract
+
  *   
  * Next, create a function named addThenSubtract which takes three parameters: `num1`, `num2`, `num3`.
  *
@@ -197,9 +209,17 @@ console.log(difference);
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
+var bango3 = 3
+var bango4 = 4
+var bango5 = 5
 
+function addThenSubtract(bango3, bango4, bango5){
+var summ = bango3 + bango4;
+	return(bango5 - sum);
+}
 
-
+var lolol = addThenSubtract(bango3, bango4, bango5);
+console.log(lolol);
 /*
  * #11
  * Function - multiplyThenDivide
@@ -215,6 +235,12 @@ console.log(difference);
 */ 
 
 
+function multiplyThenDivide(bango3, bango4, bango5){
+	var eagle = bango3*bango4;
+	return(eagle / bango5);
+}
+var haha = multiplyThenDivide(bango3, bango4, bango5);
+console.log(haha);
 
 /*
  * #12
@@ -228,6 +254,13 @@ console.log(difference);
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+function createFullName(firstName, lastName){
+return firstName + lastName;
+
+}
+
+var myFullName = createFullName("asdfas", "asdf");
+console.log(myFullName);
 
 
 /*
@@ -244,7 +277,12 @@ console.log(difference);
  * Console.log your result.
  */
 
+function eatFood(firstName, lastName){
 
+return firstName + lastName + "eats won ton soup everyday for breakfast";
+}
+var eeoo = eatFood("lmao", "google");
+console.log(eeoo);
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -258,9 +296,11 @@ console.log(difference);
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-
-
-
+function shoeSize(inches){
+	return 	inches/0.39370
+}
+var heyheyhey = shoeSize(12);
+console.log(heyheyhey);
 /*
  * #15
  * Function allCaps
@@ -271,8 +311,11 @@ console.log(difference);
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
-
-
+function allCaps(stir){
+	return stir.toUpperCase();
+}
+var nanny = allCaps("uuaa");
+console.log(nanny);
 /*
  * #16
  * Function oneCap
@@ -280,7 +323,14 @@ console.log(difference);
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
+function oneCap(str){
+	var first = str.substr(0, 1);
+	var greg = first.toUpperCase();
+	var panda = str.substr(2, 20);
+	return greg + panda;
+}
+var bonanza = oneCap("zoidburg");
+console.log(bonanza);
 
 
 /*
